@@ -18,15 +18,41 @@
 
         /* Общие стили для всех экранов */
 
+        .container {
+            padding: 2rem;
+        }
+
         .header,
-        .footer {
+        .footer,
+        #about {
             background: #333a42;
+        }
+
+        #projects {
+            background: #f1ece9;
         }
 
         /* Специфические стили для экранов */
 
-        .header {
+        .header,
+        #about {
             color: #fff;
+        }
+
+        .header li {
+            list-style: none;
+            display: inline;
+            padding-right: 2rem;
+        }
+
+        #about img {
+            padding: 2rem;
+            border-radius: 20rem;
+        }
+
+        #projects img {
+            width: 44rem;
+            padding: 2rem 0;
         }
     </style>
 </head>
@@ -46,18 +72,59 @@
                     <nav>
                         <ul>
                             <li>Обо мне</li>
+                            <li>Проекты</li>
+                            <li>Отзывы</li>
+                            <li>Контакты</li>
                         </ul>
                     </nav>
                 </div>
             </div>
-
-        </div>
-
-        <div class="container">
-
         </div>
 
     </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-4">
+                    <img src="images/photo.jpg" alt="huchasheva alexandra" style="width: 15rem;">
+                </div>
+                <div class="col-8">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nobis, earum enim itaque impedit assumenda perspiciatis nostrum
+                        quae recusandae sequi amet dolores tempora non eveniet iure ex perferendis dolore facilis! Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cupiditate provident reprehenderit
+                        laborum magnam saepe sit cumque obcaecati aspernatur, quas velit nobis nam optio molestias aut, quibusdam
+                        repellat possimus! Vel.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h3>Проекты</h3>
+                </div>
+                <div class="col-8">
+                    <figure>
+                        <img src="images/m52.jpg" alt="m52">
+                        <figcaption>
+                            <h4>Сайт интернет-провайдера М-52</h4>
+                            <p>2017 · дизайн · верстка</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
     <div class="footer">
         <p>Александра Хучашева</p>
     </div>
