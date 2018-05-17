@@ -12,53 +12,99 @@
     <style>
         body {
             font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 1rem;
+            font-size: 1.125rem;
+            /* 16px */
             line-height: 2rem;
+            background-color: #f1ece9;
         }
 
-        /* Общие стили для всех экранов */
+        /* повторяющиеся стили для всех экранов */
 
-        .container {
-            padding: 2rem;
+        h1,
+        h2,
+        h3,
+        ul {
+            margin: 0;
+            padding: 0;
         }
 
-        .header,
+
+        h1,
+        h2,
+        h3,
+        #about p {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-weight: 500;
+        }
+
+        header,
         .footer,
         #about {
             background: #333a42;
         }
 
-        #projects {
-            background: #f1ece9;
-        }
 
-        /* Специфические стили для экранов */
-
-        .header,
+        header,
         #about {
             color: #fff;
         }
 
-        .header li {
+        /* Специфические стили для экранов */
+
+        header {
+            padding-top: 2.438rem;
+        }
+
+        header nav li {
             list-style: none;
             display: inline;
-            padding-right: 2rem;
         }
+
+        header nav li:not(:last-child) {
+
+            padding-right: 2rem;
+
+        }
+
+        #about {
+            padding: 7.563rem 0 5rem 0;
+
+        }
+
 
         #about img {
-            padding: 2rem;
-            border-radius: 20rem;
+            height: 13rem;
+            width: 13rem;
+            border-radius: 50%;
         }
 
-        #projects img {
-            width: 44rem;
-            padding: 2rem 0;
+        #projects {
+           padding-top: 3.063rem;
+        }
+
+         #projects figure {
+            width: 38.75rem;
+            background-color: aquamarine;
+        } 
+
+        #projects figure img {
+        height: 18rem;
+        
+    
+
+        }
+      
+
+
+        #projects figure figcaption .counter {
+            text-align: right;
         }
     </style>
 </head>
 
 <body>
-    <div class="header">
+    <header>
         <div class="container">
 
             <div class="row">
@@ -81,15 +127,16 @@
             </div>
         </div>
 
-    </div>
+    </header>
+    <!-- /.header -->
     <div id="about">
         <div class="container">
             <div class="row">
 
-                <div class="col-4">
-                    <img src="images/photo.jpg" alt="huchasheva alexandra" style="width: 15rem;">
+                <div class="col-3">
+                    <img src="images/photo.jpg" alt="huchasheva alexandra">
                 </div>
-                <div class="col-8">
+                <div class="col-8 offset-1">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nobis, earum enim itaque impedit assumenda perspiciatis nostrum
                         quae recusandae sequi amet dolores tempora non eveniet iure ex perferendis dolore facilis! Lorem
@@ -99,21 +146,30 @@
                     </p>
                 </div>
 
-            </div>
-        </div>
-    </div>
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div><!-- /#about -->
 
     <div id="projects">
         <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <h3>Проекты</h3>
+                <div class="col-3">
+                    <h2>Проекты</h2>
                 </div>
-                <div class="col-8">
+                <div class="col-8 offset-1">
                     <figure>
                         <img src="images/m52.jpg" alt="m52">
                         <figcaption>
-                            <h4>Сайт интернет-провайдера М-52</h4>
+                            <div class="row">
+                                <div class="col-10">
+                                    <h3>Сайт интернет-провайдера М-52</h3>
+                                </div>
+                                <div class="col-2">
+                                    <div class="counter">1/10</div>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+
                             <p>2017 · дизайн · верстка</p>
                         </figcaption>
                     </figure>
