@@ -32,23 +32,39 @@
         h1,
         h2,
         h3,
-        #about p {
+        #about p,
+        #contacts p {
             font-size: 1.5rem;
             line-height: 2rem;
             font-weight: 500;
         }
 
         header,
-        .footer,
+        footer,
         #about {
             background: #333a42;
         }
 
 
         header,
+        header a,
         #about {
             color: #fff;
         }
+
+        a {
+            color: #d7443e;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #d7443e;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
 
         /* Специфические стили для экранов */
 
@@ -79,26 +95,75 @@
             border-radius: 50%;
         }
 
-        #projects {
-           padding-top: 3.063rem;
+        #projects .wrapper {
+            padding: 3.063rem 0;
+            border-bottom: 1px solid #a6a5a1;
         }
 
-         #projects figure {
+        #projects figure {
             width: 38.75rem;
-            background-color: aquamarine;
-        } 
+        }
 
         #projects figure img {
-        height: 18rem;
-        
-    
-
+            height: 18rem;
         }
-      
-
 
         #projects figure figcaption .counter {
             text-align: right;
+        }
+
+        #feedback .wrapper {
+            border-bottom: 1px solid #a6a5a1;
+            padding: 1.313rem 0 6.875rem 0;
+        }
+
+        #feedback h2 {
+            padding-bottom: 3.563rem;
+        }
+
+        #feedback img {
+            width: inherit;
+            border-radius: 50%;
+        }
+
+        #contacts {
+            padding: 2.313rem 0 6.375rem 0;
+        }
+
+        #contacts img {
+            width: 2rem;
+            padding: 3.563rem 0;
+            margin-right: 3rem;
+        }
+
+        #contacts h2 {
+            padding: 2.313rem 0;
+        }
+
+        #contacts input {
+            width: 100%;
+            background: #f1ece9;
+            border: 1px solid black;
+            margin-bottom: 0.8125rem;
+        }
+
+        #contacts textarea {
+            width: 100%;
+            background: #f1ece9;
+            border: 1px solid black;
+        }
+
+        #contacts input[type="submit"] {
+            background: #333a42;
+            color: white;
+            margin-top: 2.125rem;
+        }
+
+        footer {
+            text-align: center;
+            height: 3.25rem;
+            padding: calc(1.25rem / 2) 0;
+            color: white;
         }
     </style>
 </head>
@@ -117,10 +182,18 @@
                 <div class="col-8">
                     <nav>
                         <ul>
-                            <li>Обо мне</li>
-                            <li>Проекты</li>
-                            <li>Отзывы</li>
-                            <li>Контакты</li>
+                            <li>
+                                <a href="#about">Обо мне</a>
+                            </li>
+                            <li>
+                                <a href="#projects">Проекты</a>
+                            </li>
+                            <li>
+                                <a href="#feedback">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#contacts">Контакты</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -146,43 +219,133 @@
                     </p>
                 </div>
 
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!-- /#about -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#about -->
 
     <section id="projects">
         <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <h2>Проекты</h2>
-                </div>
-                <div class="col-8 offset-1">
-                    <figure>
-                        <img src="images/m52.jpg" alt="m52">
-                        <figcaption>
-                            <div class="row">
-                                <div class="col-10">
-                                    <h3>Сайт интернет-провайдера М-52</h3>
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-3">
+                        <h2>Проекты</h2>
+                    </div>
+                    <div class="col-8 offset-1">
+                        <figure>
+                            <img src="images/m52.jpg" alt="m52">
+                            <figcaption>
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h3>Сайт интернет-провайдера М-52</h3>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="counter">1/10</div>
+                                    </div>
                                 </div>
-                                <div class="col-2">
-                                    <div class="counter">1/10</div>
-                                </div>
-                            </div>
-                            <!-- /.row -->
+                                <!-- /.row -->
 
-                            <p>2017 · дизайн · верстка</p>
-                        </figcaption>
-                    </figure>
+                                <p>2017 · дизайн · верстка</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
                 </div>
-
-
             </div>
         </div>
     </section>
+    <!--/#projects-->
+
+    <section id="feedback">
+        <div class="container">
+            <div class="wrapper">
+                <h2>Отзывы</h2>
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/charlie-kelly.jpg" alt="feedback">
+                    </div>
+                    <div class="col-4">
+                        <h4>Чарли Келли, Филадельфия</h4>
+                        <p>Привет! Это Чарли Келли. Местный бизнесмен и кошатник. Ваш кошак слишком много и часто шумит? Ваш
+                            кошак дерет когтями Вашу мебель? Вы думаете, выхода нет? Ну вы тупые! Он есть!</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/charlie-kelly.jpg" alt="feedback">
+                    </div>
+                    <div class="col-4">
+                        <h4>Чарли Келли, Филадельфия</h4>
+                        <p>Привет! Это Чарли Келли. Местный бизнесмен и кошатник. Ваш кошак слишком много и часто шумит? Ваш
+                            кошак дерет когтями Вашу мебель? Вы думаете, выхода нет? Ну вы тупые! Он есть!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#feedback-->
+
+    <section id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2>Контакты</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias laudantium cumque aut alias ducimus.
+                        Aspernatur porro repellendus atque beatae. Repudiandae voluptatum iusto, sapiente corporis laborum
+                        ad. Esse commodi facilis obcaecati.</p>
+                    <p>Быстрее всего отвечу по
+                        <a href="mailto:alexhuchasheva@gmail.com">почте</a>.</p>
+                    <div class="socials">
+                        <img src="images/vk.png" alt="vk">
+                        <img src="images/vk.png" alt="vk">
+                        <img src="images/vk.png" alt="vk">
+                    </div>
+
+                </div>
+                <div class="col-6">
+                    <h2>Обратная связь</h2>
+                    <form method="POST" class="contact-form">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="name">Имя</label>
+                                <br>
+                                <input id="name" name="name" required>
+                                <br>
+                            </div>
+                            <div class="col-6">
+                                <label for="phone">Почта</label>
+                                <br>
+                                <input type="tel" id="phone" name="phone" required>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="message">Сообщение</label>
+                                <br>
+                                <textarea id="message" name="message" rows="5"></textarea>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <input type="submit">
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#contacts-->
 
 
     <footer>
-        <p>Александра Хучашева</p>
+        <p>Александра Хучашева,
+            <script type="text/javascript">document.write(new Date().getFullYear())</script>
+        </p>
     </footer>
 </body>
 
