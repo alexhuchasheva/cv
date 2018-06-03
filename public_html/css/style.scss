@@ -12,8 +12,13 @@ h3 {
     line-height: 2rem;
     font-weight: 500;
 }
+
+h4{
+    font-weight: bold;
+}
 a {
     color: #d7443e;
+    text-decoration: none;
     &:hover {
         text-decoration: none;
         color: #d7443e;
@@ -89,6 +94,9 @@ header {
         width: inherit;
         border-radius: 50%;
     }
+    h4{
+        padding-bottom: 0.5rem;
+    }
     
 }
 
@@ -112,11 +120,13 @@ header {
         background: #f1ece9;
         border: 1px solid black;
         margin-bottom: 0.8125rem;
+        height: 2rem;
     }
     textarea {
         width: 100%;
         background: #f1ece9;
         border: 1px solid black;
+        height: 9rem;
     }
     input[type="submit"] {
         background: #333a42;
@@ -132,3 +142,4 @@ footer {
     padding: calc(1.25rem / 2) 0;
     color: white;
 }
+

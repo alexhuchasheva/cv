@@ -1,140 +1,152 @@
 @charset "UTF-8";
 body {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1.125rem;
-  line-height: 2rem;
-  background-color: #f1ece9;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    background-color: #f1ece9;
 }
 
 h1,
 h2,
 h3 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-weight: bold;
 }
 
 a {
-  color: #d7443e;
+    color: #d7443e;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
-  color: #d7443e;
+    text-decoration: none;
+    color: #d7443e;
 }
 
 /* Стили разделов сайта */
+
 header {
-  color: #fff;
-  background: #333a42;
-  padding-top: 2.438rem;
+    color: #fff;
+    background: #333a42;
+    padding-top: 2.438rem;
 }
 
 header nav li {
-  list-style: none;
-  display: inline;
+    list-style: none;
+    display: inline;
 }
 
 header nav li:not(:last-child) {
-  padding-right: 2rem;
+    padding-right: 2rem;
 }
 
 header nav li a {
-  color: inherit;
+    color: inherit;
 }
 
 #about {
-  background: #333a42;
-  color: #fff;
-  padding: 7.563rem 0 5rem 0;
+    background: #333a42;
+    color: #fff;
+    padding: 7.563rem 0 5rem 0;
 }
 
 #about p {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
 }
 
 #about img {
-  height: 13rem;
-  width: 13rem;
-  border-radius: 50%;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
 }
 
 #projects .wrapper {
-  padding: 3.063rem 0;
-  border-bottom: 1px solid #a6a5a1;
+    padding: 3.063rem 0;
+    border-bottom: 1px solid #a6a5a1;
 }
 
 #projects figure {
-  width: 38.75rem;
+    width: 38.75rem;
 }
 
 #projects figure img {
-  height: 18rem;
+    height: 18rem;
 }
 
 #projects figure figcaption .counter {
-  text-align: right;
+    text-align: right;
 }
 
 #feedback .wrapper {
-  border-bottom: 1px solid #a6a5a1;
-  padding: 1.313rem 0 6.875rem 0;
+    border-bottom: 1px solid #a6a5a1;
+    padding: 1.313rem 0 6.875rem 0;
 }
 
 #feedback h2 {
-  padding-bottom: 3.563rem;
+    padding-bottom: 3.563rem;
 }
 
 #feedback img {
-  width: inherit;
-  border-radius: 50%;
+    width: inherit;
+    border-radius: 50%;
+}
+
+#feedback h4 {
+    padding-bottom: 0.5rem;
 }
 
 #contacts {
-  padding: 2.313rem 0 6.375rem 0;
+    padding: 2.313rem 0 6.375rem 0;
 }
 
 #contacts p {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
 }
 
 #contacts img {
-  width: 2rem;
-  padding: 3.563rem 0;
-  margin-right: 3rem;
+    width: 2rem;
+    padding: 3.563rem 0;
+    margin-right: 3rem;
 }
 
 #contacts h2 {
-  padding: 2.313rem 0;
+    padding: 2.313rem 0;
 }
 
 #contacts input {
-  width: 100%;
-  background: #f1ece9;
-  border: 1px solid black;
-  margin-bottom: 0.8125rem;
+    width: 100%;
+    background: #f1ece9;
+    border: 1px solid black;
+    margin-bottom: 0.8125rem;
+    height: 2rem;
 }
 
 #contacts textarea {
-  width: 100%;
-  background: #f1ece9;
-  border: 1px solid black;
+    width: 100%;
+    background: #f1ece9;
+    border: 1px solid black;
+    height: 9rem;
 }
 
 #contacts input[type="submit"] {
-  background: #333a42;
-  color: white;
-  margin-top: 2.125rem;
+    background: #333a42;
+    color: white;
+    margin-top: 2.125rem;
 }
 
 footer {
-  background: #333a42;
-  text-align: center;
-  height: 3.25rem;
-  padding: calc(1.25rem / 2) 0;
-  color: white;
+    background: #333a42;
+    text-align: center;
+    height: 3.25rem;
+    padding: calc(1.25rem / 2) 0;
+    color: white;
 }

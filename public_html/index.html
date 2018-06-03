@@ -9,6 +9,30 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+        });
+    </script>
     <title>Хучашева Александра - разработка сайтов</title>
 </head>
 
@@ -17,13 +41,13 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-4">
+                <div class="col-sm-4 col-xs-12">
 
                     <div class="brand">
                         <h1>Александра Хучашева</h1>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-sm-8 col-xs-12">
                     <nav>
                         <ul>
                             <li>
@@ -50,10 +74,10 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-3">
+                <div class="col-sm-3 col-xs-12">
                     <img src="images/photo.jpg" alt="huchasheva alexandra">
                 </div>
-                <div class="col-8 offset-1">
+                <div class="col-sm-8 offset-1 col-xs-12">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nobis, earum enim itaque impedit assumenda perspiciatis nostrum
                         quae recusandae sequi amet dolores tempora non eveniet iure ex perferendis dolore facilis! Lorem
@@ -74,26 +98,60 @@
         <div class="container">
             <div class="wrapper">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-sm-3 col-xs-12">
                         <h2>Проекты</h2>
                     </div>
-                    <div class="col-8 offset-1">
-                        <figure>
-                            <img src="images/m52.jpg" alt="m52">
-                            <figcaption>
-                                <div class="row">
-                                    <div class="col-10">
-                                        <h3>Сайт интернет-провайдера М-52</h3>
+                    <div class="col-sm-8 offset-1 col-xs-12">
+                        <div class="owl-carousel">
+                            <figure class="item">
+                                <img src="images/m52.jpg" alt="m52">
+                                <figcaption>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <h3>Сайт интернет-провайдера М-52</h3>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="counter">1/10</div>
+                                        </div>
                                     </div>
-                                    <div class="col-2">
-                                        <div class="counter">1/10</div>
-                                    </div>
-                                </div>
-                                <!-- /.row -->
+                                    <!-- /.row -->
 
-                                <p>2017 · дизайн · верстка</p>
-                            </figcaption>
-                        </figure>
+                                    <p>2017 · дизайн · верстка</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="item">
+                                <img src="images/m52.jpg" alt="m52">
+                                <figcaption>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <h3>Сайт интернет-провайдера М-52</h3>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="counter">1/10</div>
+                                        </div>
+                                    </div>
+                                    <!-- /.row -->
+
+                                    <p>2017 · дизайн · верстка</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="item">
+                                <img src="images/m52.jpg" alt="m52">
+                                <figcaption>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <h3>Сайт интернет-провайдера М-52</h3>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="counter">1/10</div>
+                                        </div>
+                                    </div>
+                                    <!-- /.row -->
+
+                                    <p>2017 · дизайн · верстка</p>
+                                </figcaption>
+                            </figure>
+                        </div>
                     </div>
 
                 </div>
@@ -106,23 +164,67 @@
         <div class="container">
             <div class="wrapper">
                 <h2>Отзывы</h2>
-                <div class="row">
-                    <div class="col-2">
-                        <img src="images/charlie-kelly.jpg" alt="feedback">
+                <div class="owl-carousel">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img src="images/charlie-kelly.jpg" alt="feedback">
+                                </div>
+                                <div class="col-sm-8">
+                                    <h4>Чарли Келли, Филадельфия</h4>
+                                    <p>Привет! Это Чарли Келли. Местный бизнесмен и кошатник. Ваш кошак слишком много и часто
+                                        шумит? Ваш кошак дерет когтями Вашу мебель? Вы думаете, выхода нет? Ну вы тупые!
+                                        Он есть!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img src="images/charlie-kelly.jpg" alt="feedback">
+                                </div>
+                                <div class="col-sm-8">
+                                    <h4>Чарли Келли, Филадельфия</h4>
+                                    <p>Привет! Это Чарли Келли. Местный бизнесмен и кошатник. Ваш кошак слишком много и часто
+                                        шумит? Ваш кошак дерет когтями Вашу мебель? Вы думаете, выхода нет? Ну вы тупые!
+                                        Он есть!</p>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-4">
-                        <h4>Чарли Келли, Филадельфия</h4>
-                        <p>Привет! Это Чарли Келли. Местный бизнесмен и кошатник. Ваш кошак слишком много и часто шумит? Ваш
-                            кошак дерет когтями Вашу мебель? Вы думаете, выхода нет? Ну вы тупые! Он есть!</p>
+                    <!--/конец блока отзывов-->
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img src="images/charlie-kelly.jpg" alt="feedback">
+                                </div>
+                                <div class="col-sm-8">
+                                    <h4>Чарли Келли, Филадельфия</h4>
+                                    <p>Привет! Это Чарли Келли. Местный бизнесмен и кошатник. Ваш кошак слишком много и часто
+                                        шумит? Ваш кошак дерет когтями Вашу мебель? Вы думаете, выхода нет? Ну вы тупые!
+                                        Он есть!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img src="images/charlie-kelly.jpg" alt="feedback">
+                                </div>
+                                <div class="col-sm-8">
+                                    <h4>Чарли Келли, Филадельфия</h4>
+                                    <p>Привет! Это Чарли Келли. Местный бизнесмен и кошатник. Ваш кошак слишком много и часто
+                                        шумит? Ваш кошак дерет когтями Вашу мебель? Вы думаете, выхода нет? Ну вы тупые!
+                                        Он есть!</p>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <img src="images/charlie-kelly.jpg" alt="feedback">
-                    </div>
-                    <div class="col-4">
-                        <h4>Чарли Келли, Филадельфия</h4>
-                        <p>Привет! Это Чарли Келли. Местный бизнесмен и кошатник. Ваш кошак слишком много и часто шумит? Ваш
-                            кошак дерет когтями Вашу мебель? Вы думаете, выхода нет? Ну вы тупые! Он есть!</p>
-                    </div>
+                    <!--/конец блока отзывов-->
                 </div>
             </div>
         </div>
@@ -132,11 +234,12 @@
     <section id="contacts">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-sm-6 col-xs-12">
                     <h2>Контакты</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias laudantium cumque aut alias ducimus.
                         Aspernatur porro repellendus atque beatae. Repudiandae voluptatum iusto, sapiente corporis laborum
                         ad. Esse commodi facilis obcaecati.</p>
+                    <br>
                     <p>Быстрее всего отвечу по
                         <a href="mailto:alexhuchasheva@gmail.com">почте</a>.</p>
                     <div class="socials">
@@ -146,7 +249,7 @@
                     </div>
 
                 </div>
-                <div class="col-6">
+                <div class="col-sm-6 col-xs-12">
                     <h2>Обратная связь</h2>
                     <form method="POST" class="contact-form">
                         <div class="row">
@@ -188,7 +291,9 @@
 
     <footer>
         <p>Александра Хучашева,
-            <script type="text/javascript">document.write(new Date().getFullYear())</script>
+            <script type="text/javascript">
+                document.write(new Date().getFullYear())
+            </script>
         </p>
     </footer>
 </body>
