@@ -15,7 +15,8 @@
     <script src="js/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
+            
+            $(".slider-projects").owlCarousel({
                 loop: true,
                 margin: 10,
                 nav: true,
@@ -31,6 +32,25 @@
                     }
                 }
             });
+
+
+            $(".slider-reviews").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+
         });
     </script>
     <title>Хучашева Александра - разработка сайтов</title>
@@ -102,7 +122,7 @@
                         <h2>Проекты</h2>
                     </div>
                     <div class="col-sm-8 offset-1 col-xs-12">
-                        <div class="owl-carousel">
+                        <div class="owl-carousel slider-projects">
                             <figure class="item">
                                 <img src="images/m52.jpg" alt="m52">
                                 <figcaption>
@@ -164,38 +184,42 @@
         <div class="container">
             <div class="wrapper">
                 <h2>Отзывы</h2>
-                <div class="owl-carousel">
+                <div class="owl-carousel slider-reviews">
                     <div class="row">
-                        <div class="col-sm-6 col-xs-12">
+                        <div class="col-sm-6">
                             <div class="row">
-                                <div class="col-sm-4">
+                                <div class="col-sm-4 col-4">
                                     <img src="images/charlie-kelly.jpg" alt="feedback">
                                 </div>
-                                <div class="col-sm-8">
-                                    <h4>Чарли Келли, Филадельфия</h4>
-                                    <p>Привет! Это Чарли Келли. Местный бизнесмен и кошатник. Ваш кошак слишком много и часто
-                                        шумит? Ваш кошак дерет когтями Вашу мебель? Вы думаете, выхода нет? Ну вы тупые!
-                                        Он есть!</p>
+                                <div class="col-sm-8 col-8">
+                                    <h4>Александра Добринская, компания "Левенгук"</h4>
+                                    <p>Работали с Александрой в конце 2017-го года. Саша сделала нам отличный сайт, учла все
+                                        требования и пожелания, все вопросы решались оперативно. Также хочется отметить,
+                                        что было несколько моментов, которые мы не учли в ТЗ или учли неверно. Спасибо Саше,
+                                        она вносила изменения в уже готовый проект по нашей просьбе, дополнительно денег
+                                        не брала. И отдельное спасибо за помощь и подробные инструкции, которые Саша дала
+                                        нашему программисту, по выкладке сайта в интернет.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-xs-12">
+                        <div class="col-sm-6">
                             <div class="row">
-                                <div class="col-sm-4">
+                                <div class="col-sm-4 col-4">
                                     <img src="images/charlie-kelly.jpg" alt="feedback">
                                 </div>
-                                <div class="col-sm-8">
-                                    <h4>Чарли Келли, Филадельфия</h4>
-                                    <p>Привет! Это Чарли Келли. Местный бизнесмен и кошатник. Ваш кошак слишком много и часто
-                                        шумит? Ваш кошак дерет когтями Вашу мебель? Вы думаете, выхода нет? Ну вы тупые!
-                                        Он есть!</p>
+                                <div class="col-8 col-sm-8">
+                                    <h4>Сергей Левашов, ассоциация "Национальный Ресурс"</h4>
+                                    <p>Сердечно благодарю Александру за умение терпеливо выслушать заказчика, учесть все
+                                        его пожелания и на высоком профессиональном уровне реализовать его проект.<br> С уважением,
+                                        президент Ассоциации содействия эффективному развитию потенциала страны "Национальный
+                                        Ресурс", С. Левашов.</p>
                                 </div>
 
                             </div>
                         </div>
                     </div>
                     <!--/конец блока отзывов-->
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-sm-6 col-xs-12">
                             <div class="row">
                                 <div class="col-sm-4">
@@ -223,7 +247,7 @@
 
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!--/конец блока отзывов-->
                 </div>
             </div>

@@ -1,14 +1,20 @@
+/* Функции */
+@function rem($size){
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
+}
+
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1.125rem;
-    line-height: 2rem;
+    line-height: rem(32px); //2rem
     background-color: #f1ece9;
 }
 
 h1,
 h2,
 h3 {
-    font-size: 1.5rem;
+    font-size: rem(24px);
     line-height: 2rem;
     font-weight: 500;
 }
@@ -142,4 +148,3 @@ footer {
     padding: calc(1.25rem / 2) 0;
     color: white;
 }
-
