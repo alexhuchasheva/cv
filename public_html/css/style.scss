@@ -6,7 +6,7 @@
 
 body {
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 1.125rem;
+    font-size: rem(18px);
     line-height: rem(32px); //2rem
     background-color: #f1ece9;
 }
@@ -15,7 +15,7 @@ h1,
 h2,
 h3 {
     font-size: rem(24px);
-    line-height: 2rem;
+    line-height: rem(32px);
     font-weight: 500;
 }
 
@@ -35,13 +35,13 @@ a {
 header {
     color: #fff;
     background: #333a42;
-    padding-top: 2.438rem;
+    padding-top: rem(39px);
     nav {
         li {
             list-style: none;
             display: inline;
             &:not(:last-child) {
-                padding-right: 2rem;
+                padding-right: rem(32px);
             }
             a {
                 color: inherit;
@@ -55,15 +55,15 @@ header {
 #about {
     background: #333a42;
     color: #fff;
-    padding: 7.563rem 0 5rem 0;
+    padding: rem(121px) 0 rem(80px) 0;
     p {
         font-size: 1.5rem;
-            line-height: 2rem;
+            line-height: rem(32px);
             font-weight: 500;
     }
     img {
-        height: 13rem;
-        width: 13rem;
+        height: rem(208px);
+        width: rem(208px);
         border-radius: 50%;
     }
 }
@@ -71,14 +71,14 @@ header {
 
 #projects {
     .wrapper {
-        padding: 3.063rem 0;
+        padding: rem(49px) 0;
         border-bottom: 1px solid #a6a5a1;
     }
 
     figure {
-        width: 38.75rem;
+        width: rem(620px);
         img {
-            height: 18rem;
+            height: rem(288px);
         }
         figcaption {
             .counter {
@@ -91,60 +91,60 @@ header {
 #feedback {
     .wrapper {
         border-bottom: 1px solid #a6a5a1;
-        padding: 1.313rem 0 6.875rem 0;
+        padding: rem(21px) 0 rem(110px) 0;
     }
     h2 {
-        padding-bottom: 3.563rem;
+        padding-bottom: rem(57px);
     }
     img {
         width: inherit;
         border-radius: 50%;
     }
     h4{
-        padding-bottom: 0.5rem;
+        padding-bottom: rem(8px);
     }
     
 }
 
 #contacts {
-    padding: 2.313rem 0 6.375rem 0;
+    padding: rem(37px) 0 rem(102px) 0;
     p {
-        font-size: 1.5rem;
-            line-height: 2rem;
+        font-size: rem(24px);
+            line-height: rem(32px);
             font-weight: 500;
     }
     img {
-        width: 2rem;
-        padding: 3.563rem 0;
-        margin-right: 3rem;
+        width: rem(32px);
+        padding: rem(57px) 0;
+        margin-right: rem(48px);
     }
     h2 {
-        padding: 2.313rem 0;
+        padding: rem(37px) 0;
     }
     input {
         width: 100%;
         background: #f1ece9;
         border: 1px solid black;
-        margin-bottom: 0.8125rem;
-        height: 2rem;
+        margin-bottom: rem(13px);
+        height: rem(32px);
     }
     textarea {
         width: 100%;
         background: #f1ece9;
         border: 1px solid black;
-        height: 9rem;
+        height: rem(144px);
     }
     input[type="submit"] {
         background: #333a42;
         color: white;
-        margin-top: 2.125rem;
+        margin-top: rem(34px);
     }
 }
 
 footer {
     background: #333a42;
     text-align: center;
-    height: 3.25rem;
-    padding: calc(1.25rem / 2) 0;
+    height: rem(52px);
+    padding: calc(rem(20px) / 2) 0;
     color: white;
 }
