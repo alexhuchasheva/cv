@@ -4,6 +4,8 @@
     @return #{$remSize}rem;
 }
 
+$colorbackground:#333a42;
+
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: rem(18px);
@@ -34,7 +36,7 @@ a {
 /* Стили разделов сайта */
 header {
     color: #fff;
-    background: #333a42;
+    background: $colorbackground;
     padding-top: rem(39px);
     nav {
         li {
@@ -53,7 +55,7 @@ header {
     
 
 #about {
-    background: #333a42;
+    background: $colorbackground;
     color: #fff;
     padding: rem(121px) 0 rem(80px) 0;
     p {
@@ -142,7 +144,7 @@ header {
 }
 
 footer {
-    background: #333a42;
+    background: $colorbackground;
     text-align: center;
     height: rem(52px);
     padding: calc(rem(20px) / 2) 0;

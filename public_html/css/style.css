@@ -33,7 +33,7 @@ a:hover {
 header {
   color: #fff;
   background: #333a42;
-  padding-top: 2.438rem;
+  padding-top: 2.4375rem;
 }
 
 header nav li {
@@ -52,7 +52,7 @@ header nav li a {
 #about {
   background: #333a42;
   color: #fff;
-  padding: 7.563rem 0 5rem 0;
+  padding: 7.5625rem 0 5rem 0;
 }
 
 #about p {
@@ -68,7 +68,7 @@ header nav li a {
 }
 
 #projects .wrapper {
-  padding: 3.063rem 0;
+  padding: 3.0625rem 0;
   border-bottom: 1px solid #a6a5a1;
 }
 
@@ -86,11 +86,11 @@ header nav li a {
 
 #feedback .wrapper {
   border-bottom: 1px solid #a6a5a1;
-  padding: 1.313rem 0 6.875rem 0;
+  padding: 1.3125rem 0 6.875rem 0;
 }
 
 #feedback h2 {
-  padding-bottom: 3.563rem;
+  padding-bottom: 3.5625rem;
 }
 
 #feedback img {
@@ -103,7 +103,7 @@ header nav li a {
 }
 
 #contacts {
-  padding: 2.313rem 0 6.375rem 0;
+  padding: 2.3125rem 0 6.375rem 0;
 }
 
 #contacts p {
@@ -114,12 +114,12 @@ header nav li a {
 
 #contacts img {
   width: 2rem;
-  padding: 3.563rem 0;
+  padding: 3.5625rem 0;
   margin-right: 3rem;
 }
 
 #contacts h2 {
-  padding: 2.313rem 0;
+  padding: 2.3125rem 0;
 }
 
 #contacts input {
@@ -147,7 +147,7 @@ footer {
   background: #333a42;
   text-align: center;
   height: 3.25rem;
-  padding: calc(1.25rem / 2) 0;
+  padding: calc(rem(20px) / 2) 0;
   color: white;
 }
 /*# sourceMappingURL=style.css.map */
