@@ -11,48 +11,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function () {
-
-            $(".slider-projects").owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 1
-                    },
-                    1000: {
-                        items: 1
-                    }
-                }
-            });
-
-
-            $(".slider-reviews").owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 1
-                    },
-                    1000: {
-                        items: 2
-                    }
-                }
-            });
-
-        });
-    </script>
     <title>Хучашева Александра - разработка сайтов</title>
 </head>
 
@@ -357,9 +315,9 @@
                                 <br>
                             </div>
                             <div class="col-6">
-                                <label for="phone">Почта</label>
+                                <label for="email">Почта</label>
                                 <br>
-                                <input type="tel" id="phone" name="phone" required>
+                                <input type="email" id="email" name="email" required>
                                 <br>
                             </div>
                         </div>
@@ -373,12 +331,14 @@
                         </div>
                         <div class="row">
                             <div class="col-4">
-                                <input type="submit">
+                                <input type="submit" class="jq-submit">
                             </div>
                         </div>
 
 
                     </form>
+                    <div class="jq-result-success" style="display: none;">Сообщение успешно отправлено.</div>
+                    <div class="jq-result-error" style="display: none;">При отправке сообщения произошла ошибка.</div>
                 </div>
             </div>
         </div>
@@ -393,6 +353,88 @@
             </script>
         </p>
     </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(()=>{
+            //carousel
+             $(".slider-projects").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+
+
+            $(".slider-reviews").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 2
+                    }
+                }
+            });
+            
+            //feedback
+            $('.jq-submit').on('click', (event)=>{
+                //запрет на перезагрузку страницы 
+                event.preventDefault();
+                let name = $('#name').val();
+                let email = $('#email').val();
+                let message = $('#message').val();
+                console.log(name, email, message);
+                let formData = {"name": name, "email": email, "message": message};
+                //1-url, 2-объект отправляемых данных, 3-обработчик ответа сервера, 4-формат ответа
+                $.post('server.php', formData, (responseData)=>{
+                    if(responseData.result) {
+                        $('.jq-result-success').show();
+                        $('#name').val('');
+                        $('#email').val('');
+                        $('#message').val('');
+
+                        //TODO:
+                        //валидация формы (активировать встроенную)
+                        //скрыть обратно бокс с сообщением
+                        //рефакторин
+                        //принять данные на phpи отправить их на почту.
+                    } else {
+                        $('.jq-result-error').show();
+                    }
+                }, 'json');
+
+
+
+                //XHR-XmlHttpRequest AJAX - AsyncJSAndXML
+
+                //json- современный формат ответа сервера (наряду с html) - строка, в которой данные в формате javascript объектов
+
+                //зачем кодировать ответ в json? чтобы браузер (и сам javascript) мог работать с этим ответом как с javascript-объектом
+
+                // мы можем отфильтровать ajax-запросы в браузере, посмотреть данные, которые были отправлены вместе с этим запросом, посмотреть "сырое" тело ответа и
+                //обработанное
+            });
+
+        });
+    </script>
 </body>
 
 </html>
