@@ -55,10 +55,11 @@
                 <div class="col-sm-3 col-xs-12">
                     <img src="images/photo.jpg" alt="huchasheva alexandra">
                 </div>
-                <div class="col-sm-8 offset-1 col-xs-12">
+                <div class="col-sm-8 offset-sm-1 col-xs-12">
                     <p>Доброго времени суток, меня зовут Александра, и я рада приветствовать Вас на своем сайте. Я занимаюсь
                         созданием сайтов с нуля, под ключ. Работаю с CMS Wordpress и Joomla, делаю адаптивную верстку - таким
-                        образом, Ваш сайт будет хорошо читаться на всех устройствах. Я постоянно совершенствую свои навыки,
+                        образом, Ваш сайт будет хорошо читаться на всех устройствах.</p>
+                        <p>Я постоянно совершенствую свои навыки,
                         а это значит, что поставленная задача будет выполнена с использованием самых современных методов,
                         а результат будет соответствовать новейшим тенденциям в сайтостроении. Вы можете заказать у меня
                         разработку сайта, связавшись со мной с помощью формы в конце страницы.
@@ -79,16 +80,16 @@
                     <div class="col-sm-3 col-xs-12">
                         <h2>Проекты</h2>
                     </div>
-                    <div class="col-sm-8 offset-1 col-xs-12">
+                    <div class="col-sm-8 offset-sm-1 col-xs-12">
                         <div class="owl-carousel slider-projects">
                             <figure>
                                 <img src="images/rzd.jpg" alt="m52">
                                 <figcaption>
                                     <div class="row">
-                                        <div class="col-10">
+                                        <div class="col-9 col-sm-10">
                                             <h3>Портал Вагонного хозяйства Октябрьской дирекции РЖД</h3>
                                         </div>
-                                        <div class="col-2">
+                                        <div class="col-3 col-sm-2">
                                             <div class="counter">1/10</div>
                                         </div>
                                     </div>
@@ -296,7 +297,7 @@
                         iusto, sapiente corporis laborum ad. Esse commodi facilis obcaecati.</p>
                     <br>
                     <p>Быстрее всего отвечу по
-                        <a href="mailto:alexhuchasheva@gmail.com">почте</a>.</p>
+                        <a href="mailto:name@email.com">почте</a>.</p>
                     <div class="socials">
                         <img src="images/vk.png" alt="vk">
                         <img src="images/vk.png" alt="vk">
@@ -395,14 +396,17 @@
             });
             
             //feedback
-            $('.jq-submit').on('click', (event)=>{
+            $('.contact-form').on('submit', (event)=>{
                 //запрет на перезагрузку страницы 
                 event.preventDefault();
-                let name = $('#name').val();
-                let email = $('#email').val();
-                let message = $('#message').val();
-                console.log(name, email, message);
-                let formData = {"name": name, "email": email, "message": message};
+
+                let name = $('#name').val(),
+                email = $('#email').val(),
+                message = $('#message').val(),
+                formData = {"name": name, "email": email, "message": message};
+                
+                console.log(formData);
+                
                 //1-url, 2-объект отправляемых данных, 3-обработчик ответа сервера, 4-формат ответа
                 $.post('server.php', formData, (responseData)=>{
                     if(responseData.result) {
