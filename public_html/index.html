@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../node_modules/reset-css/reset.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
     <title>Хучашева Александра - разработка сайтов</title>
 </head>
 
@@ -59,10 +59,9 @@
                     <p>Доброго времени суток, меня зовут Александра, и я рада приветствовать Вас на своем сайте. Я занимаюсь
                         созданием сайтов с нуля, под ключ. Работаю с CMS Wordpress и Joomla, делаю адаптивную верстку - таким
                         образом, Ваш сайт будет хорошо читаться на всех устройствах.</p>
-                        <p>Я постоянно совершенствую свои навыки,
-                        а это значит, что поставленная задача будет выполнена с использованием самых современных методов,
-                        а результат будет соответствовать новейшим тенденциям в сайтостроении. Вы можете заказать у меня
-                        разработку сайта, связавшись со мной с помощью формы в конце страницы.
+                    <p>Я постоянно совершенствую свои навыки, а это значит, что поставленная задача будет выполнена с использованием
+                        самых современных методов, а результат будет соответствовать новейшим тенденциям в сайтостроении.
+                        Вы можете заказать у меня разработку сайта, связавшись со мной с помощью формы в конце страницы.
                     </p>
                 </div>
 
@@ -355,90 +354,9 @@
         </p>
     </footer>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script>
-        $(()=>{
-            //carousel
-             $(".slider-projects").owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 1
-                    },
-                    1000: {
-                        items: 1
-                    }
-                }
-            });
-
-
-            $(".slider-reviews").owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 1
-                    },
-                    1000: {
-                        items: 2
-                    }
-                }
-            });
-            
-            //feedback
-            $('.contact-form').on('submit', (event)=>{
-                //запрет на перезагрузку страницы 
-                event.preventDefault();
-
-                let name = $('#name').val(),
-                email = $('#email').val(),
-                message = $('#message').val(),
-                formData = {"name": name, "email": email, "message": message};
-                
-                console.log(formData);
-                
-                //1-url, 2-объект отправляемых данных, 3-обработчик ответа сервера, 4-формат ответа
-                $.post('server.php', formData, (responseData)=>{
-                    if(responseData.result) {
-                        $('.jq-result-success').show();
-                        $('#name').val('');
-                        $('#email').val('');
-                        $('#message').val('');
-
-                        //TODO:
-                        //валидация формы (активировать встроенную)
-                        //скрыть обратно бокс с сообщением
-                        //рефакторин
-                        //принять данные на phpи отправить их на почту.
-                    } else {
-                        $('.jq-result-error').show();
-                    }
-                }, 'json');
-
-
-
-                //XHR-XmlHttpRequest AJAX - AsyncJSAndXML
-
-                //json- современный формат ответа сервера (наряду с html) - строка, в которой данные в формате javascript объектов
-
-                //зачем кодировать ответ в json? чтобы браузер (и сам javascript) мог работать с этим ответом как с javascript-объектом
-
-                // мы можем отфильтровать ajax-запросы в браузере, посмотреть данные, которые были отправлены вместе с этим запросом, посмотреть "сырое" тело ответа и
-                //обработанное
-            });
-
-        });
-    </script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

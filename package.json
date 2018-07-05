@@ -1,0 +1,30 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "Personal CV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexhuchasheva/cv.git"
+  },
+  "keywords": [
+    "CV",
+    "resume"
+  ],
+  "author": "Alexandra Huchasheva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexhuchasheva/cv/issues"
+  },
+  "homepage": "https://github.com/alexhuchasheva/cv#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "owl.carousel": "^2.3.4",
+    "popper.js": "^1.14.3",
+    "reset-css": "^4.0.1"
+  }
+}
