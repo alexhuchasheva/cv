@@ -308,4 +308,24 @@ footer {
     text-align: right;
   }
 }
+
+.owl-carousel .owl-nav .owl-prev {
+  float: left;
+  display: inline-block;
+}
+
+.owl-carousel .owl-nav .owl-prev:before {
+  content: url(http://createasite.ru/wp-content/uploads/2018/08/left.png);
+  margin-right: 10px;
+}
+
+.owl-carousel .owl-nav .owl-next {
+  float: right;
+  display: inline-block;
+}
+
+.owl-carousel .owl-nav .owl-next:after {
+  content: url(http://createasite.ru/wp-content/uploads/2018/08/right.png);
+  margin-right: 10px;
+}
 /*# sourceMappingURL=style.css.map */

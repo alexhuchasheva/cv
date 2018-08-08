@@ -1,9 +1,11 @@
-$(()=>{
+$(() => {
     //carousel
-     $(".slider-projects").owlCarousel({
+    $(".slider-projects").owlCarousel({
         loop: true,
         margin: 10,
         nav: true,
+        navText: ["", ""],
+        rewindNav: true,
         responsive: {
             0: {
                 items: 1
@@ -22,6 +24,8 @@ $(()=>{
         loop: true,
         margin: 10,
         nav: true,
+        navText: ["", ""],
+        rewindNav: true,
         responsive: {
             0: {
                 items: 1
@@ -34,22 +38,26 @@ $(()=>{
             }
         }
     });
-    
+
     //feedback
-    $('.contact-form').on('submit', (event)=>{
+    $('.contact-form').on('submit', (event) => {
         //запрет на перезагрузку страницы 
         event.preventDefault();
 
         let name = $('#name').val(),
-        email = $('#email').val(),
-        message = $('#message').val(),
-        formData = {"name": name, "email": email, "message": message};
-        
+            email = $('#email').val(),
+            message = $('#message').val(),
+            formData = {
+                "name": name,
+                "email": email,
+                "message": message
+            };
+
         console.log(formData);
-        
+
         //1-url, 2-объект отправляемых данных, 3-обработчик ответа сервера, 4-формат ответа
-        $.post('server.php', formData, (responseData)=>{
-            if(responseData.result) {
+        $.post('server.php', formData, (responseData) => {
+            if (responseData.result) {
                 $('.jq-result-success').show();
                 $('#name').val('');
                 $('#email').val('');

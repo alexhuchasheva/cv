@@ -184,7 +184,7 @@ header {
             padding: 26px 0;
         }
     }
-    .socials{
+    .socials {
         @media (max-width: $breakpoint-sm) {
             margin: 0px auto;
             display: table;
@@ -221,7 +221,7 @@ header {
         color: white;
         margin-top: 34px;
         @media (max-width: $breakpoint-sm) {
-           height: 25px;
+            height: 25px;
         }
     }
 }
@@ -236,5 +236,28 @@ footer {
         height: 24px;
         padding: 5px 29px 0 0;
         text-align: right;
+    }
+}
+
+.owl-carousel {
+    .owl-nav {
+        .owl-prev {
+            float: left;
+            display: inline-block;
+            &:before {
+                // fa-chevron-left
+                content: url(http://createasite.ru/wp-content/uploads/2018/08/left.png);
+                margin-right: 10px;
+            }
+        }
+        .owl-next {
+            float: right;
+            display: inline-block;
+            &:after {
+                //fa-chevron-right
+                content: url(http://createasite.ru/wp-content/uploads/2018/08/right.png);
+                margin-right: 10px;
+            }
+        }
     }
 }
