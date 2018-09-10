@@ -132,6 +132,9 @@ header {
                 text-align: right;
             }
             h3 {
+                a{
+                    color:black;
+                }
                 @media (max-width: $breakpoint-sm) {
                     padding: 0 0 5px 0;
                 }

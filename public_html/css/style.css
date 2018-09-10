@@ -171,6 +171,10 @@ header nav li a {
   text-align: right;
 }
 
+#projects figure figcaption h3 a {
+  color: black;
+}
+
 @media (max-width: 576px) {
   #projects figure figcaption h3 {
     padding: 0 0 5px 0;
